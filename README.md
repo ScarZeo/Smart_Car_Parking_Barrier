@@ -1,4 +1,6 @@
-## 👥 Anggota Kelompok
+##SMART CAR PARKING BARRIER
+
+## Anggota Kelompok
 
 | No | Nama Lengkap | NIM |
 | :-: | :--- | :--- |
@@ -31,7 +33,7 @@ Sistem ini terbagi menjadi tiga komponen utama sesuai dengan struktur proyek:
 
 ---
 
-## 🎯 Tujuan Proyek
+## Tujuan Proyek
 
 1. **Otomatisasi Akses Parkir**: Mempercepat proses keluar-masuk kendaraan melalui autentikasi kartu RFID tanpa memerlukan operator penuh waktu.
 2. **Meningkatkan Keamanan Area Parkir**: Mencegah akses kendaraan tidak terdaftar dengan verifikasi terpusat dan sistem peringatan dini (*alert*) jika terdeteksi anomali.
@@ -40,7 +42,7 @@ Sistem ini terbagi menjadi tiga komponen utama sesuai dengan struktur proyek:
 
 ---
 
-## 🔄 Alur Sistem
+## Alur Sistem
 
 ```text
 [Kendaraan Tiba]
@@ -86,7 +88,7 @@ Sistem ini terbagi menjadi tiga komponen utama sesuai dengan struktur proyek:
 
 ---
 
-## ⚙️ Fungsi Utama
+## Fungsi Utama
 
 1. **Autentikasi Kartu RFID Terpusat**
    Memvalidasi UID kartu kendaraan secara *real-time* terhadap basis data SQL melalui server Python.
@@ -103,19 +105,3 @@ Sistem ini terbagi menjadi tiga komponen utama sesuai dengan struktur proyek:
 
 ---
 
-## 📁 Struktur Direktori Proyek
-
-```text
-FINAL/
-├── DEVKIT1/
-│   └── DEVKIT1.ino                 # Firmware kontroler utama (ESP32 DevKit V1)
-├── KAMERA_FINAL/
-│   └── KAMERA_FINAL.ino            # Firmware modul kamera (ESP32-CAM)
-└── SERVER/
-    ├── Smart_Parking_Barrier.py    # Aplikasi server backend & pengolahan sistem
-    ├── smart_parking.sql           # Skema dan struktur database SQL
-    └── photos/                     # Direktori penyimpanan hasil foto ESP32-CAM
-        ├── *_MASUK_<UID>.jpg       # Dokumentasi kendaraan yang diizinkan masuk
-        ├── *_DITOLAK_<UID>.jpg     # Dokumentasi akses kartu yang ditolak
-        └── *_ALERT_NA.jpg          # Dokumentasi kejadian peringatan keamanan
-```
