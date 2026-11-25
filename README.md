@@ -11,7 +11,7 @@
 
 ---
 
-## 📋 Gambaran Proyek
+## Gambaran Proyek
 
 **Smart Car Parking Barrier** adalah prototipe sistem kendali gerbang parkir pintar yang dirancang untuk menggantikan sistem parkir konvensional menjadi sistem otomatis yang lebih aman dan terintegrasi.
 
